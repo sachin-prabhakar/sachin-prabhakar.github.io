@@ -119,9 +119,6 @@
       }
     }
   ],
-  "award": [
-    "Best Graduate Hack, Hack for Humanity 2025"
-  ],
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "San Francisco Bay Area",
@@ -243,10 +240,12 @@
     }
   ],
   "sameAs": [
+    "https://orcid.org/0009-0004-3202-6851",
     "https://scholar.google.com/citations?user=gyv2-IAAAAAJ",
+    "https://www.researchgate.net/profile/Sachin-Prabhakar-4",
+    "https://www.linkedin.com/in/eng-sachin",
     "https://github.com/sachin-prabhakar",
-    "https://www.linkedin.com/in/eng-sachin/",
-    "https://orcid.org/0009-0004-3202-6851"
+    "https://x.com/tweeting_sachin"
   ]
 }
 </script>
@@ -435,22 +434,6 @@
       "keywords": "wearable IMU, machine learning, exoskeleton, fatigue assessment, manufacturing",
       "isAccessibleForFree": false,
       "mainEntityOfPage": "https://sachin-prabhakar.github.io/#research"
-    },
-    {
-      "@type": "SoftwareApplication",
-      "@id": "https://sachin-prabhakar.github.io/#remind-ai",
-      "name": "ReMind AI",
-      "applicationCategory": "HealthApplication",
-      "description": "A local, privacy-first Cognitive Behavioral Therapy assistant powered by a quantized Mistral-7B language model, with a React front end and a Flask service layer. Inference runs entirely on-device.",
-      "author": {
-        "@id": "https://sachin-prabhakar.github.io/#person"
-      },
-      "creator": {
-        "@id": "https://sachin-prabhakar.github.io/#person"
-      },
-      "award": "Best Graduate Hack, Hack for Humanity 2025",
-      "operatingSystem": "Cross-platform",
-      "inLanguage": "en"
     }
   ]
 }
@@ -472,7 +455,6 @@
     --accent-dim: rgba(138, 180, 255, 0.12);
     --accent-line: rgba(138, 180, 255, 0.32);
     --mint: #5eead4;
-    --amber: #fbbf24;
     --radius: 14px;
     --radius-sm: 8px;
     --maxw: 1080px;
@@ -631,7 +613,6 @@
   }
   .badge.venue { color: var(--accent); border-color: var(--accent-line); background: var(--accent-dim); }
   .badge.year { color: var(--text-faint); }
-  .badge.award { color: var(--amber); border-color: rgba(251, 191, 36, 0.3); background: rgba(251, 191, 36, 0.09); }
   .badge.first { color: var(--mint); border-color: rgba(94, 234, 212, 0.3); background: rgba(94, 234, 212, 0.08); }
 
   .pub h3 { font-size: 18.5px; line-height: 1.38; margin-bottom: 10px; }
@@ -668,11 +649,7 @@
   .job li::before { content: ""; position: absolute; left: 2px; top: 9.5px; width: 5px; height: 5px; border-radius: 50%; background: var(--border-strong); }
   .job li strong { color: var(--text); font-weight: 600; }
 
-  /* ---------- projects + skills ---------- */
-  .grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
-  .proj h3 { font-size: 18px; margin-bottom: 10px; }
-  .proj p { font-size: 14.5px; color: var(--text-dim); }
-
+  /* ---------- skills ---------- */
   .skills { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
   .skill-group h4 { font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-faint); margin-bottom: 14px; font-weight: 600; }
   .chips { display: flex; flex-wrap: wrap; gap: 7px; }
@@ -718,7 +695,6 @@
     }
     .nav-links[hidden] { display: none; }
     .nav-links a { padding: 11px 12px; border-radius: var(--radius-sm); font-size: 15px; }
-    .grid-2 { grid-template-columns: 1fr; }
     .card { padding: 20px; }
     .contact-card { padding: 26px; }
     .timeline { padding-left: 20px; }
@@ -768,6 +744,12 @@
     <g id="i-cap" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
       <path d="M12 3 1.5 8.5 12 14l10.5-5.5L12 3Z"/><path d="M5.5 10.7V16c0 1.9 2.9 3.5 6.5 3.5s6.5-1.6 6.5-3.5v-5.3"/>
     </g>
+    <g id="i-rg" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="2.5" y="2.5" width="19" height="19" rx="4.5"/><path d="M8 16.5v-9h2.6a2.3 2.3 0 0 1 0 4.6H8m3 0 2.2 4.4"/><path d="M18.2 9.6a2.2 2.2 0 0 0-3.8 1.6v1.8a2.2 2.2 0 0 0 3.8 1.6v-1.7h-1.6"/>
+    </g>
+    <g id="i-x" fill="currentColor" stroke="none">
+      <path d="M17.3 3h3.3l-7.2 8.2L21.8 21h-6.6l-4.3-5.6L5.9 21H2.6l7.7-8.8L2.5 3h6.8l3.9 5.1L17.3 3Zm-1.2 16h1.8L7.9 4.8H6L16.1 19Z"/>
+    </g>
     <g id="i-ext" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
       <path d="M14 4h6v6"/><path d="M20 4 10.5 13.5"/><path d="M19 14.5V19a1.5 1.5 0 0 1-1.5 1.5H5A1.5 1.5 0 0 1 3.5 19V6.5A1.5 1.5 0 0 1 5 5h4.5"/>
     </g>
@@ -787,7 +769,7 @@
       <a href="#about">About</a>
       <a href="#research">Research</a>
       <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
     </nav>
   </div>
@@ -807,8 +789,8 @@
           </p>
 
           <div class="meta">
-            <span><svg aria-hidden="true"><use href="#i-pin"/></svg> San Francisco Bay Area, CA</span>
-            <span><svg aria-hidden="true"><use href="#i-cap"/></svg> Santa Clara University &mdash; MS Computer Science &amp; Engineering</span>
+            <span><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-pin"/></svg> San Francisco Bay Area, CA</span>
+            <span><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-cap"/></svg> Santa Clara University &mdash; MS Computer Science &amp; Engineering</span>
           </div>
 
           <p class="bio">
@@ -826,16 +808,22 @@
 
           <div class="links">
             <a class="link" href="https://scholar.google.com/citations?user=gyv2-IAAAAAJ" target="_blank" rel="noopener me">
-              <svg aria-hidden="true"><use href="#i-scholar"/></svg> Google Scholar
+              <svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-scholar"/></svg> Google Scholar
             </a>
             <a class="link" href="https://github.com/sachin-prabhakar" target="_blank" rel="noopener me">
-              <svg aria-hidden="true"><use href="#i-github"/></svg> GitHub
+              <svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-github"/></svg> GitHub
             </a>
-            <a class="link" href="https://www.linkedin.com/in/eng-sachin/" target="_blank" rel="noopener me">
-              <svg aria-hidden="true"><use href="#i-linkedin"/></svg> LinkedIn
+            <a class="link" href="https://www.linkedin.com/in/eng-sachin" target="_blank" rel="noopener me">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-linkedin"/></svg> LinkedIn
             </a>
             <a class="link" href="https://orcid.org/0009-0004-3202-6851" target="_blank" rel="noopener me">
-              <svg aria-hidden="true"><use href="#i-orcid"/></svg> ORCID
+              <svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-orcid"/></svg> ORCID
+            </a>
+            <a class="link" href="https://www.researchgate.net/profile/Sachin-Prabhakar-4" target="_blank" rel="noopener me">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-rg"/></svg> ResearchGate
+            </a>
+            <a class="link" href="https://x.com/tweeting_sachin" target="_blank" rel="noopener me">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-x"/></svg> X
             </a>
           </div>
         </div>
@@ -885,7 +873,7 @@
             <span class="tag">Explainability</span>
             <span class="tag">Occupational Safety</span>
             <a class="tag" href="https://scholar.google.com/citations?user=gyv2-IAAAAAJ" target="_blank" rel="noopener">
-              <svg aria-hidden="true"><use href="#i-ext"/></svg> Google Scholar
+              <svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-ext"/></svg> Google Scholar
             </a>
           </div>
         </article>
@@ -910,7 +898,7 @@
             <span class="tag">Exoskeletons</span>
             <span class="tag">Human Factors</span>
             <a class="tag" href="https://orcid.org/0009-0004-3202-6851" target="_blank" rel="noopener">
-              <svg aria-hidden="true"><use href="#i-ext"/></svg> ORCID record
+              <svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-ext"/></svg> ORCID record
             </a>
           </div>
         </article>
@@ -1006,56 +994,12 @@
     </div>
   </section>
 
-  <!-- ===== PROJECTS + SKILLS ===== -->
-  <section id="projects" aria-labelledby="proj-h">
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" aria-labelledby="skills-h">
     <div class="wrap">
       <div class="sec-head reveal">
-        <span class="eyebrow">03 / Projects</span>
-        <h2 id="proj-h">Featured work &amp; awards</h2>
-      </div>
-
-      <div class="grid-2">
-        <article class="card proj reveal">
-          <div class="pub-top">
-            <span class="badge award">Best Graduate Hack</span>
-            <span class="badge year">Hack for Humanity 2025</span>
-          </div>
-          <h3>ReMind AI</h3>
-          <p>
-            A local, privacy-first Cognitive Behavioral Therapy assistant powered by a quantized
-            Mistral-7B LLM with a React front end and Flask service layer. Inference runs entirely
-            on-device, so session content never leaves the user's machine.
-          </p>
-          <div class="tags">
-            <span class="tag">Mistral-7B</span>
-            <span class="tag">Quantization</span>
-            <span class="tag">On-device inference</span>
-            <span class="tag">React</span>
-            <span class="tag">Flask</span>
-          </div>
-        </article>
-
-        <article class="card proj reveal">
-          <div class="pub-top">
-            <span class="badge venue">Open source</span>
-          </div>
-          <h3>More on GitHub</h3>
-          <p>
-            Experiments across LLM serving, retrieval pipelines, and wearable-sensor modeling live in
-            the open. Repositories, notebooks, and research tooling are published under
-            <span style="color:var(--text)">@sachin-prabhakar</span>.
-          </p>
-          <div class="tags">
-            <a class="tag" href="https://github.com/sachin-prabhakar" target="_blank" rel="noopener">
-              <svg aria-hidden="true"><use href="#i-ext"/></svg> github.com/sachin-prabhakar
-            </a>
-          </div>
-        </article>
-      </div>
-
-      <div class="sec-head reveal" style="margin-top:56px">
-        <span class="eyebrow">04 / Stack</span>
-        <h2>Technical skills</h2>
+        <span class="eyebrow">03 / Stack</span>
+        <h2 id="skills-h">Technical skills</h2>
       </div>
 
       <div class="skills">
@@ -1106,19 +1050,19 @@
     <div class="wrap">
       <div class="card contact-card reveal">
         <div>
-          <span class="eyebrow">05 / Contact</span>
+          <span class="eyebrow">04 / Contact</span>
           <h2 id="contact-h" style="margin-top:8px">Let's build something</h2>
           <p>Open to conversations on ML systems, distributed training, and research collaborations in wearable sensing and applied generative AI.</p>
         </div>
         <div class="links" style="margin-top:0">
           <a class="link" href="mailto:sachinprabhakar.in@gmail.com">
-            <svg aria-hidden="true"><use href="#i-mail"/></svg> Email
+            <svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-mail"/></svg> Email
           </a>
-          <a class="link" href="https://www.linkedin.com/in/eng-sachin/" target="_blank" rel="noopener me">
-            <svg aria-hidden="true"><use href="#i-linkedin"/></svg> LinkedIn
+          <a class="link" href="https://www.linkedin.com/in/eng-sachin" target="_blank" rel="noopener me">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-linkedin"/></svg> LinkedIn
           </a>
           <a class="link" href="https://scholar.google.com/citations?user=gyv2-IAAAAAJ" target="_blank" rel="noopener me">
-            <svg aria-hidden="true"><use href="#i-scholar"/></svg> Scholar
+            <svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-scholar"/></svg> Scholar
           </a>
         </div>
       </div>
