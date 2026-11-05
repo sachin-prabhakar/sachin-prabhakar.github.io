@@ -78,9 +78,28 @@
   "worksFor": {
     "@id": "https://sachin-prabhakar.github.io/#nvidia"
   },
-  "memberOf": {
-    "@id": "https://sachin-prabhakar.github.io/#nvidia"
-  },
+  "memberOf": [
+    {
+      "@type": "Organization",
+      "name": "Institute of Electrical and Electronics Engineers",
+      "alternateName": "IEEE",
+      "url": "https://www.ieee.org/",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Institute_of_Electrical_and_Electronics_Engineers",
+        "https://www.wikidata.org/wiki/Q131566"
+      ]
+    },
+    {
+      "@type": "Organization",
+      "name": "Association for Computing Machinery",
+      "alternateName": "ACM",
+      "url": "https://www.acm.org/",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Association_for_Computing_Machinery",
+        "https://www.wikidata.org/wiki/Q127992"
+      ]
+    }
+  ],
   "hasCredential": [
     {
       "@type": "EducationalOccupationalCredential",
@@ -109,7 +128,7 @@
       "name": "Distributed Systems Engineer",
       "occupationalCategory": "15-1252.00 Software Developers",
       "occupationLocation": {
-        "@type": "Place",
+        "@type": "AdministrativeArea",
         "name": "Santa Clara, California"
       }
     },
@@ -118,14 +137,14 @@
       "name": "Machine Learning Infrastructure Engineer",
       "occupationalCategory": "15-1252.00 Software Developers",
       "occupationLocation": {
-        "@type": "Place",
+        "@type": "AdministrativeArea",
         "name": "Santa Clara, California"
       }
     }
   ],
   "address": {
     "@type": "PostalAddress",
-    "addressLocality": "San Francisco Bay Area",
+    "addressLocality": "Santa Clara",
     "addressRegion": "CA",
     "addressCountry": "US"
   },
@@ -184,10 +203,6 @@
         "https://en.wikipedia.org/wiki/Serverless_computing",
         "https://www.wikidata.org/wiki/Q3958022"
       ]
-    },
-    {
-      "@type": "Thing",
-      "name": "Distributed Training"
     },
     {
       "@type": "Thing",
@@ -336,8 +351,12 @@
         ]
       },
       "isPartOf": {
-        "@type": "PublicationVolume",
+        "@type": "Book",
         "name": "Digital Human Modeling and Applications in Health, Safety, Ergonomics and Risk Management (HCII 2026)",
+        "isbn": [
+          "9783032298416",
+          "9783032298423"
+        ],
         "isPartOf": {
           "@type": "Periodical",
           "name": "Lecture Notes in Computer Science",
@@ -386,11 +405,7 @@
           "url": "https://doi.org/10.1007/978-3-032-29842-3_26"
         }
       ],
-      "pagination": "400-416",
-      "isbn": [
-        "9783032298416",
-        "9783032298423"
-      ]
+      "pagination": "400-416"
     },
     {
       "@type": "ScholarlyArticle",
